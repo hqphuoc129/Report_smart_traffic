@@ -1,0 +1,11 @@
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{black}
+\SetBgContents{
+\begin{tikzpicture}[overlay,remember picture]
+    \draw [line width=1pt,rounded corners=15pt,double]
+        ($ (current page.north west) + (.5cm,-.5cm) $)
+        rectangle
+        ($ (current page.south east) + (-.5cm,.5cm) $);
+\end{tikzpicture}
+}

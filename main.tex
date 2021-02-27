@@ -1,0 +1,59 @@
+\documentclass[a4paper,13pt]{report}
+
+\usepackage[top=2.5cm,bottom=2.5cm,left=3cm,right=2cm]{geometry}
+\usepackage[a4,frame,center]{crop}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[toc,page]{appendix}
+\usepackage{amsthm}
+\usepackage{background}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usetikzlibrary{calc}
+\backgroundsetup{contents={}}
+
+\setcounter{secnumdepth}{4}
+
+\title{Intelligent Traffic System
+\author{
+    Pham Thanh Phong \\
+    Founder \\
+    ITM Vision \\
+    \texttt{phongpham663@gmail.com}
+
+    \and
+    Ha Quang Phuoc \\
+    AI Engineer \\
+    ITM Vision \\
+    \texttt{hqphuoc129@gmail.com}
+}
+\large{\thanks{Special thanks for the guidance of Msc.Vo Phi Son}}
+}
+
+\AtBeginDocument{%
+    \let\mtcontentsname\contentsname
+    \renewcommand\contentsname{\MakeUppercase\mtcontentsname}
+}
+
+\begin{document}
+    \maketitle
+
+    \newpage
+    \tableofcontents
+    \listoffigures
+
+    \input{Chapter_1/Chap1.tex}
+
+    \input{Chapter_2/Chap2.tex}
+
+    \input{Chapter_3/Chap3.tex}
+
+    \input{Chapter_4/Chap4.tex}
+
+    \input{Chapter_5/Chap5.tex}
+
+    \input{Chapter_6/Chap6.tex}
+\end{document}
